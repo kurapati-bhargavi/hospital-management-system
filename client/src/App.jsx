@@ -9,12 +9,8 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <p>this is for testing </p>
+        <h1>this also for testing 1</h1>
       </div>
       <h1>Vite + React</h1>
       <div className="card">
@@ -33,3 +29,4 @@ function App() {
 }
 
 export default App
+//bhargavi-kurapati
