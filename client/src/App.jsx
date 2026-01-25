@@ -10,7 +10,7 @@ function App() {
     <>
       <div>
         <p>this is for testing </p>
-        <h1> this also for testing 1</h1>
+        <h1>this also for testing 1</h1>
       </div>
     </>
   )
