@@ -22,7 +22,7 @@ function App() {
         </p>
       </div>
       <p >
-        madhus world begin
+        jhansi world begin
       </p>
     </>
   )
