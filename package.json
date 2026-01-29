@@ -10,13 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "bootstrap": "^5.3.8",
+    "lottie-react": "^2.4.1",
     "react": "^19.2.0",
-<<<<<<< HEAD
-    "react-dom": "^19.2.0"
-=======
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.13.0"
->>>>>>> 54b2a6d52fc6d099c3a23916265a20c50c3e1675
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
