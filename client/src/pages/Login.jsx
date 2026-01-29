@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
 import "./Auth.css";
 
@@ -32,3 +33,16 @@ function Login() {
 }
 
 export default Login;
+=======
+import React from "react";
+
+const Login = () => {
+  return (
+    <div>
+      <h2>Login Page</h2>
+    </div>
+  );
+};
+
+export default Login;
+>>>>>>> 54b2a6d52fc6d099c3a23916265a20c50c3e1675
