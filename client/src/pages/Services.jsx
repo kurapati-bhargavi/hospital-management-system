@@ -1,5 +1,5 @@
 import React, { useState, useEffect,useRef} from "react";
-import "../styles/Services.css";
+import "../styles/services.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
