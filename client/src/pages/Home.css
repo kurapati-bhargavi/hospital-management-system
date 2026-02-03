@@ -1,11 +1,88 @@
-.home {
-  height: 100vh;
-  background-color: lightblue;
-  background-image: url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3");
+/* Home Section with background image */
+.home-section {
+  background-image: url("/home-bg.jpg"); /* image in public folder */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed; /* fixed background */
+  min-height: 100vh; /* full screen height */
+  display: flex;
+  align-items: flex-start; /* align content at top */
+  padding: 40px 60px; /* spacing */
+  margin-top: 80px; /* push below navbar */
+}
 
+/* Left side content */
+.home-content {
+  max-width: 500px;
+  color: #fff;
+}
+
+/* Hospital Title - black text */
+.hospital-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: left;
+  color: #000; /* ✅ black */
+  text-shadow: 2px 2px 6px rgba(255,255,255,0.6); /* subtle glow for readability */
+}
+
+/* Caption line - yellow */
+.caption {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #ffd700; /* ✅ golden yellow */
+}
+
+/* Description with semi-transparent background */
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: left;
+  max-width: 600px;
+  color: #fff;
+  background-color: rgba(0,0,0,0.5); /* semi-transparent black */
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Right side success stories */
+.success-stories {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Story cards */
+.story-card {
+  background-color: rgba(0, 0, 0, 0.7); /* light black */
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.6s ease-in-out;
+  transform: scale(0.9);
+  opacity: 0.6;
   text-align: center;
-  padding-top: 100px;
+}
+
+.story-card.active {
+  transform: scale(1); /* expand */
+  opacity: 1;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.story-card.inactive {
+  transform: scale(0.9); /* shrink */
+  opacity: 0.6;
+}
+
+/* Story images inside cards */
+.story-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }

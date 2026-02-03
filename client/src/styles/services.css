@@ -1,0 +1,12 @@
+/* src/App.css */
+.service-img {
+  width: 120px;       /* fixed width */
+  height: 120px;      /* fixed height */
+  object-fit: cover;  /* crop/scale image to fit box */
+  border-radius: 8px; /* optional rounded corners */
+}
+.service-icon {
+  width: 70px;          /* reduce size */
+  height: 70px;         /* keep square */
+  object-fit: contain;  /* image fits nicely */
+}

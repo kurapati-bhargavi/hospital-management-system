@@ -1,42 +1,76 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar .nav-link {
+  color: #000 !important;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  text-decoration: underline;
+}
+footer {
+  position: relative; /* keeps footer below content */
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  color: #000;
+}
+.service-img {
+  width: 120px;       /* fixed width */
+  height: 120px;      /* fixed height */
+  object-fit: cover;  /* crop/scale image to fit box */
+  border-radius: 8px; /* optional rounded corners */
+}
+html {
+  scroll-behavior: smooth;
+}
+.navbar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  min-height: 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* keeps it above other content */
+}
+.main-content {
+  padding-top: 70px; /* adjust based on navbar height */
+}
+.navbar-brand img {
+  height: 35px;       /* shrink logo size */
+}
+.nav-link {
+  padding: 5px 10px;  /* reduce link spacing */
+  font-size: 14px;    /* smaller text */
+}
+.navbar .nav-link {
+  color: white !important;
+}
+.navbar .nav-link:hover {
+  color: #ffd700 !important; /* golden hover */
+}
+body {
+  padding-top: 75px; /* prevents navbar overlap */
+}
+.page-content {
+  margin-top: 70px;
+}
+html, body {
+  height: 100%;      /* full height */
+  margin: 0;         /* remove default margin */
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full viewport height */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+main {
+  flex: 1;           /* pushes footer down */
 }
